@@ -1,0 +1,26 @@
+.formWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 24px;
+    gap: 16px;
+
+    .urlInput {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+
+        .selectMethod {
+            width: 120px;
+            height: 40px;
+        }
+
+        .url {
+            width: 450px;
+        }
+
+        .submitButton {
+            height: 40px;
+        }
+    }
+}

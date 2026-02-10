@@ -1,0 +1,70 @@
+.formWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    padding: 24px;
+    gap: 16px;
+    max-width: 1200px;
+
+    .urlInput {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+
+        .selectMethod {
+            width: 120px;
+            height: 40px;
+        }
+
+        .url {
+            width: 100%;
+        }
+
+        .submitButton {
+            height: 40px;
+        }
+
+        .timeout {
+            width: 170px;
+        }
+    }
+
+    .body {
+        margin-top: 16px;
+    }
+
+    .waitingStatus {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+    }
+
+    .resultContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 24px;
+        height: 400px;
+        
+        .header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .status {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+        }
+
+        .resultBody {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            height: 100%;
+            overflow-y: auto;
+        }
+    }
+}
