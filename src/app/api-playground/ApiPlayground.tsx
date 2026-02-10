@@ -170,6 +170,16 @@ export default function ApiPlayground() {
     abortController.current?.abort();
   };
 
+  useEffect(() => {
+    const handler = (e: KeyboardEvent) => {
+      if (e.key === "Escape") cancelRequest();
+    };
+
+    window.addEventListener("keydown", handler);
+
+    return () => window.removeEventListener("keydown", handler);
+  }, [cancelRequest]);
+
   const validateUrl = () => {
     if (!url.trim()) {
       return 'URL is required!'
